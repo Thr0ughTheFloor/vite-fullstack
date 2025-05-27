@@ -37,14 +37,19 @@ function App() {
   }
 
   return (
-    <div style={{padding: '2rem'}}>
-      <form onSubmit={handleLogin}>
-        <h2>login</h2>
-        <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
-        <input type="password" placeholder='senha' value={password} onChange={(e) => setPassword(e.target.value)} required/>
-        <button type='submit'>Entrar</button>
-        <p>{message}</p>
-      </form>
+    <div className='wrapLogin'>
+      <div className='wrapImg'>
+          <div className='degrade'></div>
+      </div>
+      <div className='wrapForm'>
+            <form onSubmit={handleLogin}>
+              <h2>login</h2>
+              <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+              <input type="password" placeholder='senha' value={password} onChange={(e) => setPassword(e.target.value)} required/>
+              <button type='submit'>Entrar</button>
+              <p>{message}</p>
+            </form>
+          </div>
     </div>
   )
 }

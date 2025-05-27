@@ -27,7 +27,7 @@ export const UsersList = () => {
     if(erro) return <p>{erro}</p>
 
     return(
-        <div style={{padding: '2rem'}}>
+        <div className={Style.wrapAll}>
             <h1>Lista de usuarios</h1>
             <ul>
                 {users.map((item) => (
