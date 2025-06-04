@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import { UsersList } from './usersList.jsx'
 import Dashboard from './dashboard.jsx'
+import ProductsList from './productsList.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,7 +14,8 @@ createRoot(document.getElementById('root')).render(
       <Route path='/' element={<App />}/>
       <Route path='/userslist' element={<UsersList />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
-    </Routes>
+      <Route path='/productslist' element={<ProductsList/>}/>
+     </Routes>
     </BrowserRouter>
   </StrictMode>,
 )

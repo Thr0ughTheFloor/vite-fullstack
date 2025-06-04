@@ -26,7 +26,7 @@ function Dashboard(){
                 setUserCount(usersRes.data.length)
                 setProductCount(productsRes.data.length)
             }catch(err){
-                console.error("Erro ao buscar os dados")
+                console.error("Erro ao buscar os dados" + err)
             }
         }
         fetchData()
@@ -42,7 +42,7 @@ function Dashboard(){
                 <div className={style.wrapItem} onClick={() => navigate('/#')}>
                     <p>Criar Produto</p>
                 </div>
-                <div className={style.wrapItem} onClick={() => navigate('/#')}>
+                <div className={style.wrapItem} onClick={() => navigate('/productslist')}>
                     <p>Lista de Produtos</p>
                 </div>
                 <div className={style.wrapItem} onClick={() => navigate('/#')}>

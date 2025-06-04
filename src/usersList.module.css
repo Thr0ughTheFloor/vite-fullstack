@@ -1,0 +1,8 @@
+.wrapAll{
+    display: flex;
+    margin-left: 2rem;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}

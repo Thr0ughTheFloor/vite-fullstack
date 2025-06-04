@@ -1,0 +1,57 @@
+.list_conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.wrapNav{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+}
+
+.wrapCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    background-color: #120202;
+    color: var(--txt);
+    width: 300px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    flex-direction: column;
+    transition: all 200ms ease-in-out;
+}
+
+.wrapCards img{
+    width: 200px;
+    height: auto;
+}
+
+.product_txt{
+    display: inline;
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.product_txt button{
+    background-color: #3e0707;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.wrapCards:hover{
+    box-shadow: rgb(29, 6, 6) 0px 20px 30px -10px;
+    opacity: 1;
+    transform: scale(1.02);
+    border: 6px solid transparent;
+    transition: all 200ms ease-in-out;
+}

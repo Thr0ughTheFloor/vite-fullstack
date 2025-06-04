@@ -47,7 +47,7 @@ function App() {
               <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
               <input type="password" placeholder='senha' value={password} onChange={(e) => setPassword(e.target.value)} required/>
               <button type='submit'>Entrar</button>
-              <p>{message}</p>
+              <p style={{color: 'red'}}>{message}</p>
             </form>
           </div>
     </div>
