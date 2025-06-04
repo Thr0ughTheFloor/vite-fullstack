@@ -1,3 +1,16 @@
+:root{
+    --bg: #120202;
+    --compBg: #310404;
+    --txt: #ffffff;
+}
+
 *{
-    font-family: monospace;
+    font-family: monospace; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
 }

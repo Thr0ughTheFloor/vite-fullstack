@@ -1,6 +1,7 @@
 import Style from './usersList.module.css'
 import { useEffect, useState } from 'react'
 import { api } from './api/api'
+import { Menu } from './components/menu'
 
 
 export const UsersList = () => {

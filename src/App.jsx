@@ -16,7 +16,7 @@ function App() {
     const storedUser = localStorage.getItem('user')
     if(storedUser){
       setUser(JSON.parse(storedUser))
-      navigate('/usersList')
+      navigate('/dashboard')
     }
   }, [navigate])
 
@@ -30,7 +30,7 @@ function App() {
 
       localStorage.setItem('user', JSON.stringify(user))
       setUser(user)
-      navigate('/usersList')
+      navigate('/dashboard')
     }catch(err){
       setMessage('erro no login', err)
     }
