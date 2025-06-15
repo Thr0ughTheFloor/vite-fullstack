@@ -3,12 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 100dvw;
+    background-color: black;
     
 }
 
 .wrapForm{
-    width: 50%;
-    height: 100dvh;
+    width: 50% !important;
+    height: 100% ;
     background-color: black;
     background-size: 100%;
     display: flex;
@@ -33,7 +34,7 @@
 .wrapForm form{
    /* background-color: red; */
    display: flex;
-   width: 400px;
+   max-width: 400px;
    height: auto;
    /* border: 2px solid black; */
    justify-content: center;
@@ -70,6 +71,24 @@
 .wrapForm button:focus{
     outline: none;
  
+}
+
+.SignBtn{
+    position: fixed;
+    margin-top: 80vh;
+    
+}
+
+@media (max-width: 900px) {
+    .wrapImg{
+        display: none;
+        
+    }
+    .wrapForm{
+        width: 100vw;
+        height: 100vh;
+    }
+
 }
 
 @keyframes faderight {

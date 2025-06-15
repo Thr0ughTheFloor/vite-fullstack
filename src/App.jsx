@@ -36,6 +36,16 @@ function App() {
     }
   }
 
+
+  // const handleSign = async(e) => {
+  //   e.preventDefault()
+  //   try{
+
+  //   }catch(){
+
+  //   }
+  // }
+
   return (
     <div className='wrapLogin'>
       <div className='wrapImg'>
@@ -48,6 +58,7 @@ function App() {
               <input type="password" placeholder='senha' value={password} onChange={(e) => setPassword(e.target.value)} required/>
               <button type='submit'>Entrar</button>
               <p style={{color: 'red'}}>{message}</p>
+              <button type='button' className='SignBtn' onClick={() => {navigate('/signup')}}>Criar conta</button>
             </form>
           </div>
     </div>
